@@ -1,5 +1,5 @@
 describe('Addition of two numbers', () => {
-  it(`Should calculate sum of two numbers`, () => {
+  it('Should calculate sum of two numbers', () => {
     // Declare two variables and assign numbers to them
     var number1 = 5;
     var number2 = 3;
@@ -7,6 +7,7 @@ describe('Addition of two numbers', () => {
     var sum = number1 + number2;
     // Print the result
     console.log("The sum of the two numbers is: " + sum);
-    expect(sum).to.eq('8')
-  })
-})
+    // Assert that the sum is equal to 8
+    expect(sum).to.equal(8);
+  });
+});
